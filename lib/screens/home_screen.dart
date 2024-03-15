@@ -123,9 +123,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       switch (snapshot.connectionState) {
                         case ConnectionState.waiting:
                         case ConnectionState.none:
-                          return Center(
+                          /*return Center(
                             child: CircularProgressIndicator(),
-                          );
+                          );*/
                         case ConnectionState.active:
                         case ConnectionState.done:
                           final data = snapshot.data?.docs;
